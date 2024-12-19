@@ -1,0 +1,108 @@
+@import 'common.css';
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100px;
+    background-color: #f5f5f5; 
+    bottom:100px;   
+}
+
+/* Update the checkout-content class */
+.checkout-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 100px;
+    background-color: white;
+    min-height: 100vh; /* Make it fill the viewport height */
+    gap: 30px; /* Add some space between the grid columns */
+}
+
+.cart-items {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cart-items h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.items-count {
+    color: #666;
+    font-size: 14px;
+}
+
+.cart-list {
+    margin-top: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-quantity button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #8B0000;
+    background: white;
+    color: #8B0000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-summary {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.summary-details {
+    margin-top: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.summary-item.total {
+    font-weight: bold;
+    color: #333;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background: #8B0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover {
+    background: #660000;
+}
