@@ -1,6 +1,6 @@
 <header class="dashboard-header">
     <div class="logo">
-        <img src="images/logo-image.png" alt="logo" class="logo-img">
+        <img src="./images/logo-image.png" alt="logo" class="logo-img">
         <span class="brand-name">FoodieBayan</span>
     </div>
     <div class="search-bar">

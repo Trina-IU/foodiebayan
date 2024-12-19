@@ -31,7 +31,7 @@ $current_page = 'dashboard';
 
             <!-- Banner -->
             <div class="banner">
-                <img src="images/banner.jpg" alt="Super Delicious Food Menu">
+                <img src="./images/banner.jpg" alt="Super Delicious Food Menu">
             </div>
 
             <!-- Categories -->
@@ -57,7 +57,7 @@ $current_page = 'dashboard';
                     foreach($foods as $food) {
                         echo "
                         <div class='food-item' data-category='" . strtolower($food['category']) . "'>
-                            <img src='images/foods/{$food['image']}' alt='{$food['name']}'>
+                            <img src='./images/{$food['image']}' alt='{$food['name']}'>
                             <h3>{$food['name']}</h3>
                             <p>" . formatPrice($food['price']) . "</p>
                             <button class='add-to-cart' onclick='addToCart({$food['id']}, \"{$food['name']}\", {$food['price']})'>
